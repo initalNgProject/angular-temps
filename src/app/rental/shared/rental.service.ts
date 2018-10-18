@@ -65,7 +65,7 @@ public getrentalById(rentalId: string): Observable<Rental> {
        }, 4000);
   });
 }
-public testFunction(arg: string): string {
+public testFunction(arg: string) {
  return 'gdgdg';
 }
 public getRentals(): any {

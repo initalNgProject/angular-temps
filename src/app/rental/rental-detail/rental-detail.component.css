@@ -1,0 +1,66 @@
+  /* @import 'variables';
+
+#rentalDetails {
+  .upper-section {
+    img {
+      width: 100%;
+    }
+     margin-bottom: 30px;
+  }
+
+  .details-section {
+    color: blue;
+    .rental {
+     .rental-type {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .rental-title {
+        margin-bottom: 5px;
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .rental-city {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      .rental-room-info {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 16px;
+
+        span  {
+          margin-right: 24px;
+        }
+
+        i {
+          margin-right: 2px;
+        }
+      }
+
+      .rental-description {
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+
+     .rental-assets {
+        .reental-title {
+          margin-bottom: 10px;
+          font-weight : 700;
+          font-size: 22px;
+        }
+        span {
+          display: block;
+          margin-bottom: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+} */

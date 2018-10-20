@@ -9,6 +9,7 @@ import { RentalComponent } from './rental/rental.component';
 import { RentalModule } from './rental/rental.module';
 
 
+
 const appRoutes: Routes = [
   { path: '', redirectTo: '/rentals', pathMatch: 'full'}
 
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent
+
 ],
   imports: [
     BrowserModule,

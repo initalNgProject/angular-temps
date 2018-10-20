@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, UpperCasePipe } from '@angular/common';
-import { NgPipesModule } from 'ngx-pipes';
+import { NgPipesModule, CamelizePipe } from 'ngx-pipes';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RentalListComponent } from './rental-list/rental-list.component';
@@ -10,6 +10,7 @@ import { RentalService } from './shared/rental.service';
 import { RouterModule, Routes } from '@angular/router';
 import { RentalDetailComponent } from './rental-detail/rental-detail.component';
 import { UppercasePipe } from '../common/pipes/uppercase.pipe';
+import { MapModule } from '../common/map/map.module';
 
 const routes: Routes = [
   {
@@ -21,8 +22,6 @@ const routes: Routes = [
     ]
 
   }
-
-
 ];
 @NgModule({
   declarations: [
@@ -31,12 +30,16 @@ const routes: Routes = [
     RentalComponent,
     RentalDetailComponent,
     UppercasePipe
+
   ],
   imports: [CommonModule,
     HttpClientModule,
+    MapModule,
     NgPipesModule,
   RouterModule.forChild(routes) ],
-  providers: [RentalService]
+  providers: [RentalService
+  ,
+  CamelizePipe ]
 
 })
 export class RentalModule  {

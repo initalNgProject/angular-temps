@@ -2,7 +2,7 @@ const express = require('express');
 const  router = express.Router();
 const Rental = require('../models/rental');
 router.get('',function(req,res){
- Rental.find({}, (err,foundRental) =>{
+ Rental.find({}, (err,foundRental) => {
    res.json(foundRental);
  });
 });
